@@ -3,6 +3,8 @@ import ats_tracker
 import career_roadmap
 import market_analysis
 import discussion
+import courses
+import skill_assessment
 
 st.set_page_config(page_title="Career Hub AI", layout="wide")
 
@@ -12,7 +14,6 @@ st.markdown("""
         /* Global Styles */
         body {
             background: linear-gradient(135deg, #0D1117, #1A1F25);
-            color: white;
             font-family: 'Inter', 'Segoe UI', sans-serif;
         }
         
@@ -50,18 +51,16 @@ st.markdown("""
             padding: 30px;
             margin-bottom: 10px;
             border-radius: 16px;
-            background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
-        .feature-card:hover {
-            transform: translateY(-8px);
-            background: rgba(255, 255, 255, 0.08);
+            .feature-card:hover {
+            transform: translateY(-20px) rotateX(10deg);
             border-color: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 12px 48px rgba(110, 69, 226, 0.2);
+            box-shadow: 0 16px 64px rgba(110, 69, 226, 0.3);
         }
         
         /* Button Styling */
@@ -154,7 +153,7 @@ if st.session_state.page == "home":
 
     st.markdown("## Discover Your Career Tools")
     
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
 
     with col1:
         st.markdown("""
@@ -215,6 +214,38 @@ if st.session_state.page == "home":
         if st.button("Start Discussion", key="discussion"):
             st.session_state.page = "discussion"
         st.markdown("</div>", unsafe_allow_html=True)
+    
+    with col5:
+        st.markdown("""
+            <div class="feature-card">
+                <div>
+                    <div class="feature-icon">📚</div>
+                    <div class="feature-title">Courses</div>
+                    <div class="feature-description">
+                        Access curated courses to upskill and stay competitive in your career. Learn at your own pace.
+                    </div>
+                </div>
+        """, unsafe_allow_html=True)
+        if st.button("Explore Courses", key="courses", help="Find and enroll in career-boosting courses"):
+            st.session_state.page = "courses"
+        st.markdown("</div>", unsafe_allow_html=True)
+
+    # New Skill Assessment Section
+    with col6:
+        st.markdown("""
+            <div class="feature-card">
+                <div>
+                    <div class="feature-icon">🧠</div>
+                    <div class="feature-title">Skill Assessment</div>
+                    <div class="feature-description">
+                        Evaluate your skills with AI-powered assessments and track your growth over time.
+                    </div>
+                </div>
+        """, unsafe_allow_html=True)
+        if st.button("Assess Skills", key="skill_assessment", help="Take assessments to gauge your career readiness"):
+            st.session_state.page = "skill_assessment"
+        st.markdown("</div>", unsafe_allow_html=True)
+
 
 elif st.session_state.page == "ats_tracker":
     ats_tracker.main()
@@ -224,6 +255,10 @@ elif st.session_state.page == "market_analysis":
     market_analysis.main()
 elif st.session_state.page == "discussion":
     discussion.main()
+elif st.session_state.page == "courses":
+    courses.main()  # Assuming a courses module has been created
+elif st.session_state.page == "skill_assessment":
+    skill_assessment.main()
 
 # Enhanced Footer
 st.markdown("""
