@@ -1,4 +1,10 @@
+python
 streamlit
 python-dotenv
 google-generativeai
 pdf2image
+seaborn
+matplotlib
+plotly
+langchain
+langchain_groq
