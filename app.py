@@ -1,23 +1,24 @@
 import streamlit as st
+st.set_page_config(page_title="Career Hub AI", layout="wide")
+
 import ats_tracker
 import career_roadmap
 import market_analysis
 import discussion
 import courses
 import skill_assessment
+import mock_interview
+import top_educators
+import scenario_based_evaluation
 
-st.set_page_config(page_title="Career Hub AI", layout="wide")
-
-# Enhanced CSS for a Modern UI
+# Custom Styles
 st.markdown("""
     <style>
-        /* Global Styles */
         body {
-            background: linear-gradient(135deg, #0D1117, #1A1F25);
-            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background-color: #1A1F25;
+            font-family: 'Segoe UI', sans-serif;
         }
         
-        /* Main Title Styling */
         .main-title {
             text-align: center;
             font-size: 52px;
@@ -30,26 +31,28 @@ st.markdown("""
             animation: gradient 3s ease infinite;
             margin: 40px 0 20px;
         }
+            
+         /* Animations */
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
         
-        /* Subtitle Enhancement */
         .sub-title {
             text-align: center;
             font-size: 22px;
             color: #A0AEC0;
             margin-bottom: 40px;
-            font-weight: 400;
-            letter-spacing: 0.5px;
         }
         
-        /* Feature Cards */
         .feature-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 270px;
-            height: 400px;
-            padding: 30px;
-            margin-bottom: 10px;
+            background: #2D3748;
+            padding: 20px;
+            height: 350px;
+            margin: 10px 0;
+            text-align: center;
+            color: white;
             border-radius: 16px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -57,62 +60,29 @@ st.markdown("""
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
-            .feature-card:hover {
-            transform: translateY(-20px) rotateX(10deg);
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.08);
             border-color: rgba(255, 255, 255, 0.2);
+            transform: translateZ(20px) rotateZ(10deg);
             box-shadow: 0 16px 64px rgba(110, 69, 226, 0.3);
         }
         
-        /* Button Styling */
-        .feature-button {
-            background: linear-gradient(135deg, #6E45E2, #88D3CE);
-            color: white;
-            border: none;
-            padding: 14px 28px;
-            border-radius: 12px;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-            display: block;
-            width: 100%;
-            margin-top: 20px;
-        }
-        
-        .feature-button:hover {
-            background: linear-gradient(135deg, #88D3CE, #6E45E2);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(110, 69, 226, 0.3);
-        }
-        
-        /* Card Icons */
         .feature-icon {
             font-size: 60px;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #6E45E2, #88D3CE);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: white;
         }
         
-        /* Card Title */
         .feature-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 16px;
-            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
         }
         
-        /* Card Description */
         .feature-description {
             font-size: 16px;
-            color: #A0AEC0;
-            line-height: 1.6;
             margin-bottom: 20px;
         }
         
-        /* Footer Enhancement */
         .footer {
             text-align: center;
             font-size: 14px;
@@ -121,132 +91,53 @@ st.markdown("""
             margin-top: 40px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
-        /* Animations */
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 """, unsafe_allow_html=True)
-
-
 
 # Navigation State
 if "page" not in st.session_state:
     st.session_state.page = "home"
     # Hero Section
-    st.markdown('<div class="main-title">DreamBridge AI</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-title">Elevate Your Career Journey with AI-Powered Insights</div>', unsafe_allow_html=True)
+    st.markdown("""
+    <div class="hero-section">
+        <h1 class="main-title">DreamBridge AI</h1>
+        <p class="sub-title">Elevate Your Career Journey with AI-Powered Insights</p>
+    </div>
+    """, unsafe_allow_html=True)
 
-# Home Page
 if st.session_state.page == "home":
-    st.markdown("### 🎯 Transform Your Career Path")
+    st.markdown("<h2 class='sub-title'>Discover Your Career Tools</h2>", unsafe_allow_html=True)
 
-    st.write("Leverage AI-driven tools to optimize your career decisions and maximize your potential.")
-
-    st.markdown("## Discover Your Career Tools")
+    col1, col2, col3, col4 = st.columns(4)
     
-    col1, col2, col3, col4, col5, col6 = st.columns(6)
-
-    with col1:
-        st.markdown("""
-            <div class="feature-card">
-                <div>
-                    <div class="feature-icon">🚀</div>
-                    <div class="feature-title">NextGen Career Suite</div>
-                    <div class="feature-description">
-                        Advanced resume optimization using AI to maximize your application success rate. Get detailed insights and recommendations.
-                    </div>
-                </div>
-        """, unsafe_allow_html=True)
-        if st.button("Optimize Resume", key="ats_tracker", help="Optimize your resume for ATS"):
-            st.session_state.page = "ats_tracker"
-        st.markdown("</div>", unsafe_allow_html=True)
-
-    with col2:
-        st.markdown("""
-            <div class="feature-card">
-                <div>
-                    <div class="feature-icon">🧭</div>
-                    <div class="feature-title">Career Roadmap</div>
-                    <div class="feature-description">
-                        Personalized career progression planning with AI insights. Map your journey and identify growth opportunities.
-                    </div>
-                </div>
-        """, unsafe_allow_html=True)
-        if st.button("Plan Your Path", key="career_roadmap", help="Plan your career path with AI insights"):
-            st.session_state.page = "career_roadmap"
-        st.markdown("</div>", unsafe_allow_html=True)
-
-    with col3:
-        st.markdown("""
-            <div class="feature-card">
-                <div>
-                    <div class="feature-icon">📊</div>
-                    <div class="feature-title">Market Analysis</div>
-                    <div class="feature-description">
-                        Real-time industry insights and salary benchmarks to help you make informed career decisions.
-                    </div>
-                </div>
-        """, unsafe_allow_html=True)
-        if st.button("Explore Trends", key="market_analysis", help="Stay updated with job trends & salary insights"):
-            st.session_state.page = "market_analysis"
-        st.markdown("</div>", unsafe_allow_html=True)
-
-    with col4:
-        st.markdown("""
-            <div class="feature-card">
-                <div>
-                    <div class="feature-icon">💬</div>
-                    <div class="feature-title">AI Career Discussion</div>
-                    <div class="feature-description">
-                        Engage in AI-driven career discussions, get expert opinions, and explore different career perspectives.
-                    </div>
-                </div>
-        """, unsafe_allow_html=True)
-        if st.button("Start Discussion", key="discussion"):
-            st.session_state.page = "discussion"
-        st.markdown("</div>", unsafe_allow_html=True)
+    card_info = [
+        ("🚀", "NextGen Career Suite", "Advanced resume optimization using AI to maximize your application success rate. Get detailed insights and recommendations.", "Optimize Resume", "ats_tracker"),
+        ("🧭", "Career Roadmap", "Personalized career progression planning with AI insights. Map your journey and identify growth opportunities.", "Plan Your Path", "career_roadmap"),
+        ("📊", "Market Analysis", "Real-time industry insights and salary benchmarks to help you make informed career decisions.", "Explore Trends", "market_analysis"),
+        ("💬", "AI Career Discussion", "Engage in AI-driven career discussions, get expert opinions, and explore different career perspectives.", "Start Discussion", "discussion"),
+        ("📚", "Courses", "Access curated courses to upskill and stay competitive in your career. Learn at your own pace.", "Explore Courses", "courses"),
+        ("🧠", "Skill Assessment", "Evaluate your skills with AI-powered assessments and track your growth over time.", "Assess Skills", "skill_assessment"),
+        ("🎤", "AI-Powered Mock Interview", "Practice for your next interview with AI-generated questions tailored to your desired role.", "Start Mock Interview", "mock_interview"),
+        ("🏆", "Top Educators", "Find top mentors and educators based on AI-powered search and recommendation system.", "Find Mentors", "top_educators"),
+        ("🔍", "Job Role Prediction", "Get AI-based predictions for suitable job roles based on your skills.", "Predict Job Role", "scenario_based_evaluation"),
+    ]
     
-    with col5:
-        st.markdown("""
-            <div class="feature-card">
-                <div>
-                    <div class="feature-icon">📚</div>
-                    <div class="feature-title">Courses</div>
-                    <div class="feature-description">
-                        Access curated courses to upskill and stay competitive in your career. Learn at your own pace.
-                    </div>
+    # Fill columns with cards
+    for idx, (icon, title, desc, button_text, page_link) in enumerate(card_info):
+        with [col1, col2, col3, col4][idx % 4]:  # Distribute cards into columns
+            st.markdown(f"""
+                <div class="feature-card">
+                    <div class="feature-icon">{icon}</div>
+                    <div class="feature-title">{title}</div>
+                    <div class="feature-description">{desc}</div>
                 </div>
-        """, unsafe_allow_html=True)
-        if st.button("Explore Courses", key="courses", help="Find and enroll in career-boosting courses"):
-            st.session_state.page = "courses"
-        st.markdown("</div>", unsafe_allow_html=True)
+            """, unsafe_allow_html=True)
+            
+            # Create the button to navigate to respective pages
+            if st.button(button_text, key=page_link):
+                st.session_state.page = page_link
 
-    # New Skill Assessment Section
-    with col6:
-        st.markdown("""
-            <div class="feature-card">
-                <div>
-                    <div class="feature-icon">🧠</div>
-                    <div class="feature-title">Skill Assessment</div>
-                    <div class="feature-description">
-                        Evaluate your skills with AI-powered assessments and track your growth over time.
-                    </div>
-                </div>
-        """, unsafe_allow_html=True)
-        if st.button("Assess Skills", key="skill_assessment", help="Take assessments to gauge your career readiness"):
-            st.session_state.page = "skill_assessment"
-        st.markdown("</div>", unsafe_allow_html=True)
-
-
+# Redirecting to specific pages
 elif st.session_state.page == "ats_tracker":
     ats_tracker.main()
 elif st.session_state.page == "career_roadmap":
@@ -256,13 +147,19 @@ elif st.session_state.page == "market_analysis":
 elif st.session_state.page == "discussion":
     discussion.main()
 elif st.session_state.page == "courses":
-    courses.main()  # Assuming a courses module has been created
+    courses.main()  
 elif st.session_state.page == "skill_assessment":
     skill_assessment.main()
+elif st.session_state.page == "mock_interview":
+    mock_interview.main()
+elif st.session_state.page == "scenario_based_evaluation":
+    scenario_based_evaluation.main()
+elif st.session_state.page == "top_educators":
+    top_educators.main()
 
-# Enhanced Footer
+# Footer
 st.markdown("""
-    <div class="footer">
+    <div class="footer" style="margin-bottom: 8px">
         <div>💼 Powered by Advanced AI Technology</div>
         <div style="margin-top: 8px;">© 2025 Career Hub AI - Empowering Career Growth</div>
     </div>

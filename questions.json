@@ -1,0 +1,368 @@
+{
+    "technical_skills": {
+      "Programming Languages": {
+        "Python": [
+          {"question": "What is the output of print(2 + 3 * 4)?", "options": ["20", "14", "16", "12"], "answer": "14"},
+          {"question": "Which of the following is used to define a function in Python?", "options": ["def", "func", "function", "method"], "answer": "def"},
+          {"question": "Which of the following is the correct way to create a set in Python?", "options": ["[]", "{}", "()", "<>"], "answer": "{}"},
+          {"question": "What will the following code output: print(2**3)?", "options": ["6", "8", "3", "9"], "answer": "8"},
+          {"question": "Which of the following data types is immutable in Python?", "options": ["list", "set", "tuple", "dictionary"], "answer": "tuple"},
+          {"question": "How do you comment a single line in Python?", "options": ["//", "#", "/*", "<!--"], "answer": "#"},
+          {"question": "Which method is used to add an item to a list in Python?", "options": [".add()", ".insert()", ".append()", ".extend()"], "answer": ".append()"},
+          {"question": "What will be the output of len('hello')?", "options": ["4", "5", "6", "7"], "answer": "5"},
+          {"question": "Which of the following is the correct syntax for a lambda function?", "options": ["lambda x: x + 2", "lambda(x) => x + 2", "function(x) => x + 2", "lambda(x, x) -> x + 2"], "answer": "lambda x: x + 2"},
+          {"question": "What will be the output of print(5 // 2)?", "options": ["2", "2.5", "3", "1"], "answer": "2"}
+        ],
+        "C++": [
+          {"question": "Which of the following is used to declare a variable in C++?", "options": ["var", "let", "int", "string"], "answer": "int"},
+          {"question": "Which of the following is the correct way to include a header file?", "options": ["#include <iostream>", "#include <iostream.h>", "import <iostream>", "include <iostream>"], "answer": "#include <iostream>"},
+          {"question": "What is the default value of an uninitialized integer in C++?", "options": ["0", "null", "undefined", "garbage value"], "answer": "garbage value"},
+          {"question": "Which operator is used for dynamic memory allocation in C++?", "options": ["new", "malloc", "calloc", "alloc"], "answer": "new"},
+          {"question": "Which of the following is the correct syntax for a constructor in C++?", "options": ["className()", "constructor className()", "className::constructor()", "void className()"], "answer": "className()"},
+          {"question": "What is the purpose of the 'return' statement in a function?", "options": ["To return the result of the function", "To stop the execution of the program", "To define the function", "To pass parameters to the function"], "answer": "To return the result of the function"},
+          {"question": "What is the size of an int in C++ on a 64-bit system?", "options": ["2 bytes", "4 bytes", "8 bytes", "16 bytes"], "answer": "4 bytes"},
+          {"question": "Which of the following is an example of a reference variable in C++?", "options": ["int &a", "int *a", "int a[]", "int a()"], "answer": "int &a"},
+          {"question": "Which of the following is used for exception handling in C++?", "options": ["try-catch", "throw-catch", "catch-throw", "try-except"], "answer": "try-catch"},
+          {"question": "What is the correct syntax for declaring an array in C++?", "options": ["int[] arr", "int arr[]", "arr int[]", "int arr{}"], "answer": "int arr[]"}
+        ],
+        "Java": [
+        {"question": "What is the default value of a boolean in Java?", "options": ["true", "false", "null", "undefined"], "answer": "false"},
+        {"question": "Which method is used to get the length of an array in Java?", "options": [".length", ".size()", ".length()", ".getSize()"], "answer": ".length"},
+        {"question": "Which keyword is used to inherit a class in Java?", "options": ["extends", "inherits", "implements", "super"], "answer": "extends"},
+        {"question": "Which of the following is used to create a new thread in Java?", "options": ["Thread()", "Thread.run()", "new Thread()", "createThread()"], "answer": "new Thread()"},
+        {"question": "Which of the following is not a valid data type in Java?", "options": ["int", "float", "real", "boolean"], "answer": "real"},
+        {"question": "What is the size of a char in Java?", "options": ["1 byte", "2 bytes", "4 bytes", "8 bytes"], "answer": "2 bytes"},
+        {"question": "Which method is used to compare two strings in Java?", "options": ["equals()", "compare()", "isEqual()", "compareTo()"], "answer": "equals()"},
+        {"question": "What does the 'static' keyword do in Java?", "options": ["Makes the method accessible without an instance", "Makes a variable constant", "Indicates a class method", "All of the above"], "answer": "All of the above"},
+        {"question": "Which collection class allows duplicate elements in Java?", "options": ["HashSet", "ArrayList", "TreeSet", "HashMap"], "answer": "ArrayList"},
+        {"question": "Which of the following is used to handle exceptions in Java?", "options": ["catch", "throw", "try", "All of the above"], "answer": "All of the above"}
+      ],
+      "JavaScript": [
+        {"question": "Which of the following is used to declare a variable in JavaScript?", "options": ["var", "let", "const", "All of the above"], "answer": "All of the above"},
+        {"question": "How do you create a function in JavaScript?", "options": ["function myFunction()", "func myFunction()", "create function myFunction()", "All of the above"], "answer": "function myFunction()"},
+        {"question": "Which of the following is a JavaScript data type?", "options": ["int", "boolean", "string", "All of the above"], "answer": "All of the above"},
+        {"question": "What does '===' do in JavaScript?", "options": ["Equality check", "Strict equality check", "Not equal", "Not strict equality check"], "answer": "Strict equality check"},
+        {"question": "How can you add a comment in JavaScript?", "options": ["// comment", "/* comment */", "<!-- comment -->", "All of the above"], "answer": "All of the above"},
+        {"question": "Which method is used to find the index of an element in an array in JavaScript?", "options": [".find()", ".indexOf()", ".search()", ".locate()"], "answer": ".indexOf()"},
+        {"question": "What is the output of `typeof(42)` in JavaScript?", "options": ["string", "number", "object", "undefined"], "answer": "number"},
+        {"question": "Which of the following is used to parse JSON data in JavaScript?", "options": ["JSON.parse()", "parseJSON()", "JSON.stringify()", "parse()"], "answer": "JSON.parse()"},
+        {"question": "Which function is used to redirect to another webpage in JavaScript?", "options": ["window.location", "window.redirect", "window.navigate", "None of the above"], "answer": "window.location"},
+        {"question": "What will the following code output: `console.log(2 + '2')`?", "options": ["4", "22", "undefined", "Error"], "answer": "22"}
+      ]
+      },
+      "Web Technologies": {
+        "HTML/CSS": [
+          {"question": "Which tag is used to create a hyperlink in HTML?", "options": ["<a>", "<link>", "<button>", "<img>"], "answer": "<a>"},
+          {"question": "Which CSS property is used to change the background color?", "options": ["color", "background-color", "bg-color", "background"], "answer": "background-color"},
+          {"question": "Which HTML element is used for input fields?", "options": ["<input>", "<field>", "<textarea>", "<button>"], "answer": "<input>"},
+          {"question": "How can you make a list with bullets in HTML?", "options": ["<ol>", "<ul>", "<li>", "<dl>"], "answer": "<ul>"},
+          {"question": "What does CSS stand for?", "options": ["Cascading Style Sheets", "Computer Style Sheets", "Creative Style Sheets", "Centralized Style Sheets"], "answer": "Cascading Style Sheets"},
+          {"question": "Which HTML attribute specifies the URL of an image?", "options": ["src", "href", "alt", "img"], "answer": "src"},
+          {"question": "Which of the following is a valid CSS selector?", "options": ["#id", ".class", "element", "All of the above"], "answer": "All of the above"},
+          {"question": "What is the default display value of a div element?", "options": ["inline", "block", "flex", "none"], "answer": "block"},
+          {"question": "Which tag is used for displaying images in HTML?", "options": ["<image>", "<img>", "<src>", "<pic>"], "answer": "<img>"},
+          {"question": "What does the 'z-index' property in CSS control?", "options": ["Positioning", "Visibility", "Stacking order", "Size"], "answer": "Stacking order"}
+        ],
+        "React": [
+          {"question": "What is the use of JSX in React?", "options": ["To handle state", "To handle events", "To render HTML-like code", "To manage API calls"], "answer": "To render HTML-like code"},
+          {"question": "Which of the following is used to define a functional component in React?", "options": ["function App()", "const App = function()", "const App = () => {}", "class App extends React.Component"], "answer": "const App = () => {}"},
+          {"question": "Which hook is used to manage state in functional components?", "options": ["useState", "useEffect", "useContext", "useReducer"], "answer": "useState"},
+          {"question": "What does the 'key' prop in a React list do?", "options": ["Helps in reordering the list", "Identifies each item uniquely", "Sets the background color", "None of the above"], "answer": "Identifies each item uniquely"},
+          {"question": "What is the default value of 'state' in a class component?", "options": ["null", "undefined", "{}", "[]"], "answer": "{}"},
+          {"question": "What does the 'useEffect' hook do?", "options": ["Runs a side effect after render", "Triggers a re-render", "Updates the state", "Manages DOM elements"], "answer": "Runs a side effect after render"},
+          {"question": "What method is used to update the state in a class component?", "options": ["this.setState()", "this.updateState()", "this.renderState()", "this.changeState()"], "answer": "this.setState()"},
+          {"question": "Which lifecycle method is called after a component is removed from the DOM?", "options": ["componentWillUnmount", "componentDidMount", "componentDidUpdate", "componentWillUpdate"], "answer": "componentWillUnmount"},
+          {"question": "What is 'Virtual DOM' in React?", "options": ["A browser feature", "A way to optimize re-rendering", "A component", "A data structure"], "answer": "A way to optimize re-rendering"},
+          {"question": "Which of the following is the correct syntax to pass props to a component?", "options": ["<Component name='value' />", "<Component prop='value' />", "<Component(name='value') />", "<Component {name='value'} />"], "answer": "<Component prop='value' />"}
+        ],
+        "Angular": [
+        {"question": "What is Angular?", "options": ["A framework for building single-page web applications", "A JavaScript library", "A backend framework", "None of the above"], "answer": "A framework for building single-page web applications"},
+        {"question": "What is the primary language used to write Angular applications?", "options": ["JavaScript", "TypeScript", "Python", "Java"], "answer": "TypeScript"},
+        {"question": "Which of the following is used to create components in Angular?", "options": ["@Component", "@Injectable", "@Directive", "@NgModule"], "answer": "@Component"},
+        {"question": "How do you create a new Angular service?", "options": ["ng generate service", "ng new service", "ng add service", "ng service"], "answer": "ng generate service"},
+        {"question": "What is the decorator used to define a module in Angular?", "options": ["@NgModule", "@Component", "@Directive", "@Injectable"], "answer": "@NgModule"},
+        {"question": "Which of the following is used to handle HTTP requests in Angular?", "options": ["HttpClient", "HttpRequest", "HttpService", "HttpHandler"], "answer": "HttpClient"},
+        {"question": "What does the 'ngOnInit' lifecycle hook do in Angular?", "options": ["Runs once when the component is initialized", "Runs every time a component is re-rendered", "Handles HTTP requests", "None of the above"], "answer": "Runs once when the component is initialized"},
+        {"question": "Which of the following can be used for two-way data binding in Angular?", "options": ["[(ngModel)]", "{{value}}", "ngIf", "ngFor"], "answer": "[(ngModel)]"},
+        {"question": "Which directive is used to display a list of elements in Angular?", "options": ["ngFor", "ngIf", "ngModel", "ngSwitch"], "answer": "ngFor"},
+        {"question": "Which Angular command is used to build the application for production?", "options": ["ng build --prod", "ng serve --prod", "ng deploy", "ng start"], "answer": "ng build --prod"}
+      ]
+      }
+    },
+    "soft_skills": {
+      "Communication": {
+        "Written": [
+            {"question": "What is the most important aspect of written communication?", "keywords": ["clarity", "concise", "understandable"]},
+            {"question": "Which of the following is not a common writing format?", "keywords": ["presentations", "slides", "PowerPoint"]},
+            {"question": "How can you improve the tone of your writing?", "keywords": ["friendly", "positive", "engaging"]},
+            {"question": "What is the purpose of proofreading?", "keywords": ["errors", "clarity", "grammar", "spelling"]},
+            {"question": "What is the key to effective written communication?", "keywords": ["clear", "organized", "concise"]},
+            {"question": "Which tool helps with improving writing quality?", "keywords": ["spell check", "thesaurus", "grammar checker"]},
+            {"question": "What should be avoided in written communication?", "keywords": ["jargon", "complex", "unclear"]},
+            {"question": "What is a common mistake in professional emails?", "keywords": ["casual", "punctuation", "no subject line"]},
+            {"question": "Which writing style is most suitable for technical documents?", "keywords": ["formal", "structured", "precise"]},
+            {"question": "What is the purpose of the introduction in a written document?", "keywords": ["preview", "overview", "introduction"]}
+        ],
+        "Verbal": [
+            {"question": "What is an effective way to begin a conversation?", "keywords": ["greeting", "hello", "introduction"]},
+            {"question": "Which of the following is an important part of active listening?", "keywords": ["eye contact", "focus", "nodding"]},
+            {"question": "Which of the following is not considered professional speaking?", "keywords": ["slang", "informal", "casual"]},
+            {"question": "How can you ensure your message is clear during verbal communication?", "keywords": ["avoid jargon", "speak clearly", "simple words"]},
+            {"question": "Which of the following enhances verbal communication?", "keywords": ["clear", "slow", "pronunciation"]},
+            {"question": "Which of the following best describes verbal communication?", "keywords": ["spoken", "words", "speech"]},
+            {"question": "How do you maintain the attention of your audience?", "keywords": ["eye contact", "engagement", "interaction"]},
+            {"question": "What is the most important factor in effective communication?", "keywords": ["clarity", "concise", "understanding"]},
+            {"question": "What should you avoid when communicating verbally in a professional setting?", "keywords": ["filler words", "slang", "informal"]},
+            {"question": "What is the benefit of using active listening techniques?", "keywords": ["understanding", "comprehension", "engagement"]}
+        ],
+        "Presentation": [
+        { "question": "What is the key to an engaging presentation?",  "keywords": ["clarity", "storytelling", "visuals"]
+        },
+        {
+          "question": "What should you avoid in a professional presentation?", "keywords": ["too much text", "monotone", "cluttered slides"]
+        },
+        {
+          "question": "How can you improve audience engagement during a presentation?", "keywords": ["eye contact", "questions", "interaction"]
+        },
+        {
+          "question": "What is the best way to handle nervousness before a presentation?", "keywords": ["practice", "deep breathing", "confidence"]
+        },
+        {
+          "question": "What is the purpose of using visual aids in presentations?", "keywords": ["support", "illustrate", "engage"]
+        },
+        {
+          "question": "How do you structure an effective presentation?", "keywords": ["introduction", "body", "conclusion"]
+        },
+        {
+          "question": "What are some common mistakes presenters make?", "keywords": ["reading slides", "lack of preparation", "overloading content"]
+        },
+        {
+          "question": "How can you make your slides visually appealing?", "keywords": ["minimal text", "high-quality images", "contrasting colors"]
+        },
+        { "question": "What techniques can help make complex ideas easier to understand?", "keywords": ["analogies", "examples", "simplified language"] },
+        { "question": "Why is audience analysis important before a presentation?",  "keywords": ["relevance", "engagement", "tailoring message"] }
+      ]
+      }, 
+      "Leadership": {
+      "Team Management": [
+        {
+          "question": "What are the key skills required for effective team management?",
+          "keywords": ["communication", "delegation", "collaboration"]
+        },
+        {
+          "question": "How do you handle conflicts within a team?",
+          "keywords": ["mediation", "listening", "compromise"]
+        },
+        {
+          "question": "How do you motivate your team members?",
+          "keywords": ["recognition", "incentives", "goal-setting"]
+        },
+        {
+          "question": "What strategies help in building team cohesion?",
+          "keywords": ["trust-building", "transparency", "collaboration"]
+        },
+        {
+          "question": "What is the role of feedback in team management?",
+          "keywords": ["improvement", "guidance", "motivation"]
+        },
+        {
+          "question": "How do you delegate tasks effectively?",
+          "keywords": ["clear instructions", "matching skills", "trust"]
+        },
+        {
+          "question": "What are the biggest challenges in managing a remote team?",
+          "keywords": ["communication", "engagement", "productivity tracking"]
+        },
+        {
+          "question": "How do you deal with underperforming team members?",
+          "keywords": ["coaching", "mentorship", "constructive feedback"]
+        },
+        {
+          "question": "What are the benefits of cross-functional team collaboration?",
+          "keywords": ["innovation", "knowledge sharing", "efficiency"]
+        },
+        {
+          "question": "How do you measure a team's success?",
+          "keywords": ["KPIs", "performance metrics", "goal achievement"]
+        }
+      ]
+    }
+    },
+    "professional_skills": {
+    "Project Management": {
+      "Agile": [
+        {
+          "question": "What is a key principle of Agile methodology?",
+          "keywords": ["iteration", "collaboration", "flexibility"]
+        },
+        {
+          "question": "How does Agile differ from traditional project management?",
+          "keywords": ["incremental", "customer feedback", "continuous improvement"]
+        },
+        {
+          "question": "What are the main Agile frameworks?",
+          "keywords": ["Scrum", "Kanban", "XP"]
+        },
+        {
+          "question": "How do Agile teams handle changing requirements?",
+          "keywords": ["adaptability", "sprints", "prioritization"]
+        },
+        {
+          "question": "What is the role of the Product Owner in Agile?",
+          "keywords": ["vision", "backlog management", "stakeholder communication"]
+        },
+        {
+          "question": "What are Agile ceremonies and their purposes?",
+          "keywords": ["sprint planning", "daily standup", "retrospective"]
+        },
+        {
+          "question": "What are the benefits of using Agile in software development?",
+          "keywords": ["faster delivery", "higher quality", "customer satisfaction"]
+        },
+        {
+          "question": "How do you measure success in an Agile project?",
+          "keywords": ["velocity", "customer feedback", "increment delivery"]
+        },
+        {
+          "question": "What challenges do teams face when adopting Agile?",
+          "keywords": ["resistance to change", "lack of training", "poor collaboration"]
+        },
+        {
+          "question": "How does Agile support continuous improvement?",
+          "keywords": ["retrospectives", "feedback loops", "experimentation"]
+        }
+      ]
+    },
+    "Quality Assurance": {
+      "Testing": [
+        {
+          "question": "What are the different types of software testing?",
+          "keywords": ["unit", "integration", "system", "user acceptance"]
+        },
+        {
+          "question": "Why is automated testing important?",
+          "keywords": ["efficiency", "consistency", "faster releases"]
+        },
+        {
+          "question": "What is the difference between functional and non-functional testing?",
+          "keywords": ["features", "performance", "security"]
+        },
+        {
+          "question": "How does regression testing help in software development?",
+          "keywords": ["bug detection", "stability", "code changes"]
+        },
+        {
+          "question": "What are the key components of a test plan?",
+          "keywords": ["test cases", "scope", "resources"]
+        },
+        {
+          "question": "What is exploratory testing?",
+          "keywords": ["ad-hoc", "experience-based", "error detection"]
+        },
+        {
+          "question": "How do you prioritize test cases?",
+          "keywords": ["critical functionality", "risk-based", "high-impact"]
+        },
+        {
+          "question": "What is the purpose of user acceptance testing (UAT)?",
+          "keywords": ["customer validation", "real-world scenarios", "business needs"]
+        },
+        {
+          "question": "What is the difference between black-box and white-box testing?",
+          "keywords": ["input/output", "code analysis", "test case design"]
+        },
+        {
+          "question": "Why is defect tracking important in testing?",
+          "keywords": ["issue resolution", "improvement", "quality assurance"]
+        }
+      ],
+      "Quality Control": [
+        {
+          "question": "What is the primary goal of quality control?",
+          "keywords": ["defect prevention", "consistency", "customer satisfaction"]
+        },
+        {
+          "question": "What are the key steps in a quality control process?",
+          "keywords": ["inspection", "testing", "corrective action"]
+        },
+        {
+          "question": "How does quality control differ from quality assurance?",
+          "keywords": ["reactive", "testing", "detect defects"]
+        },
+        {
+          "question": "What are some common quality control tools?",
+          "keywords": ["control charts", "Pareto analysis", "fishbone diagram"]
+        },
+        {
+          "question": "Why is statistical process control (SPC) important in quality control?",
+          "keywords": ["monitoring", "variation detection", "improvement"]
+        },
+        {
+          "question": "What role do inspections play in quality control?",
+          "keywords": ["error detection", "compliance", "product evaluation"]
+        },
+        {
+          "question": "How can companies ensure consistent quality across products?",
+          "keywords": ["standardization", "process improvement", "employee training"]
+        },
+        {
+          "question": "What is the significance of a quality control checklist?",
+          "keywords": ["consistency", "thorough evaluation", "error reduction"]
+        },
+        {
+          "question": "What challenges do companies face in quality control?",
+          "keywords": ["cost", "time-consuming", "resource constraints"]
+        },
+        {
+          "question": "How does automation improve quality control?",
+          "keywords": ["accuracy", "efficiency", "reduced human error"]
+        }
+      ],
+      "Standards Compliance": [
+        {
+          "question": "Why is compliance with industry standards important?",
+          "keywords": ["regulations", "customer trust", "legal requirements"]
+        },
+        {
+          "question": "What are some widely recognized quality standards?",
+          "keywords": ["ISO 9001", "Six Sigma", "CMMI"]
+        },
+        {
+          "question": "How do companies ensure compliance with standards?",
+          "keywords": ["audits", "documentation", "continuous improvement"]
+        },
+        {
+          "question": "What are the risks of non-compliance with quality standards?",
+          "keywords": ["penalties", "reputation damage", "legal issues"]
+        },
+        {
+          "question": "What role do internal audits play in compliance?",
+          "keywords": ["evaluation", "risk assessment", "corrective actions"]
+        },
+        {
+          "question": "How can companies integrate compliance into their workflows?",
+          "keywords": ["training", "monitoring", "automation"]
+        },
+        {
+          "question": "What is the impact of international standards on global businesses?",
+          "keywords": ["market access", "credibility", "trade regulations"]
+        },
+        {
+          "question": "How does documentation help in standards compliance?",
+          "keywords": ["traceability", "accountability", "audit readiness"]
+        },
+        {
+          "question": "What is the role of regulatory bodies in compliance?",
+          "keywords": ["enforcement", "guidelines", "certification"]
+        },
+        {
+          "question": "What are best practices for maintaining compliance?",
+          "keywords": ["regular audits", "employee training", "up-to-date policies"]
+        }
+      ]
+    }
+  }
+}  
+
+
+  

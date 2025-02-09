@@ -12,6 +12,9 @@ def main():
     load_dotenv()
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
+    if "roadmaps" not in st.session_state:
+        st.session_state.roadmaps = []
+
     if not GROQ_API_KEY:
         raise ValueError("GROQ_API_KEY is not set. Please add it to your environment variables.")
 
@@ -269,10 +272,6 @@ def main():
 
                 response = agent.run(user_input)
                 st.session_state.response = response
-
-                # Initialize roadmaps list if not already initialized
-                if "roadmaps" not in st.session_state:
-                    st.session_state.roadmaps = []
 
                 # Append the generated roadmap to the session state
                 st.session_state.roadmaps.append({

@@ -119,9 +119,7 @@ class DiscussionRoom:
         return random.sample(tips, 3)
 
     def main(self):
-        # st.set_page_config(page_title="Career Hub AI - Discussion Room", page_icon="💬")
         
-        # Apply custom CSS
         st.markdown(self.generate_custom_css(), unsafe_allow_html=True)
         
         # Back Button

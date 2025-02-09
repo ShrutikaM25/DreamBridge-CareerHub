@@ -119,7 +119,6 @@ def input_pdf_setup(uploaded_file):
 
 # STREAMLIT UI
 def main():
-    # st.set_page_config(page_title="ATS Tracking System", page_icon="📄", layout="wide")
 
     apply_custom_css()
 
