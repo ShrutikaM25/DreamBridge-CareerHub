@@ -1,3 +1,4 @@
+pdf2image
 aiobotocore>=2.4.2
 aiohappyeyeballs>=2.4.4
 aiohttp>=3.11.11
