@@ -1,13 +1,18 @@
-# 🚀 DreamBridge Career Hub
+# 🚀 DreamBridge AI
 
 ## 🌟 Overview
-The **DreamBridge Career Hub** is an AI-powered web application built with **Streamlit** that helps users design a personalized career path. By analyzing your **skills, interests, education level, and industry preferences**, the tool generates a step-by-step roadmap, including recommended skills, job roles, and curated learning resources.
+The **DreamBridge AI** is an AI-powered web application built with **Streamlit** that helps users design a personalized career path. By analyzing your **skills, interests, education level, and industry preferences**, the tool generates a step-by-step roadmap, including recommended skills, job roles, and curated learning resources.
 
 ## 🔥 Features
-- 🎨 **Intuitive UI** – Built with Streamlit for seamless interaction.
-- 🤖 **AI-Driven Recommendations** – Uses **LangChain** and **Groq's LLM** for smart career guidance.
-- 📚 **Course & Resource Suggestions** – Provides direct links to upskilling opportunities.
-- 🔍 **Dynamic Career Insights** – Get insights into relevant job roles and required skills.
+- 🚀 **NextGen Career Suite** – Advanced resume optimization using AI to maximize your application success rate. Get detailed insights and recommendations.
+- 🧭 **Career Roadmap** – Personalized career progression planning with AI insights. Map your journey and identify growth opportunities.
+- 📊 **Market Analysis** – Real-time industry insights and salary benchmarks to help you make informed career decisions.
+- 💬 **AI Career Discussion** – Engage in AI-driven career discussions, get expert opinions, and explore different career perspectives.
+- 📚 **Courses** – Access curated courses to upskill and stay competitive in your career. Learn at your own pace.
+- 🧠 **Skill Assessment** – Evaluate your skills with AI-powered assessments and track your growth over time.
+- 🎤 **AI-Powered Mock Interview** – Practice for your next interview with AI-generated questions tailored to your desired role.
+- 🏆 **Top Educators** – Find top mentors and educators based on AI-powered search and recommendation systems.
+- 🔍 **Job Role Prediction** – Get AI-based predictions for suitable job roles based on your skills.
 
 ## 🛠 Tech Stack
 - **Python** – Backend logic
@@ -60,7 +65,7 @@ streamlit run app.py
 4. Explore suggested **career paths, essential skills, job roles, and recommended courses**.
 
 ## 🌍 Live Demo
-🔗 [Deployed Application](https://shrutikam25-dreambridge-careerhub-app-gpzygz.streamlit.app/)
+🔗 [Deployed Application]([https://your-deployed-link.com](https://shrutikam25-dreambridge-careerhub-app-gpzygz.streamlit.app/)
 
 ## 🤝 Contributing
 We welcome contributions! Feel free to **submit a pull request** or **open an issue** to improve the project.
